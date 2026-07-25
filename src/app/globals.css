@@ -49,18 +49,14 @@ h3 { font: 400 1.55rem/1 var(--display); letter-spacing: -0.025em; text-transfor
 .site-header__signal { height: 2px; background: linear-gradient(90deg, transparent, var(--brass), #8d8dff, var(--brass), transparent); opacity: 0.9; }
 .site-header__inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand-link { display: inline-flex; flex: 0 0 auto; }
-.metallic-logo { display: inline-flex; align-items: center; gap: 11px; transform-style: preserve-3d; transition: transform 220ms ease; }
-.metallic-logo:hover { transform: perspective(450px) rotateX(3deg) rotateY(-6deg); }
-.metallic-logo__shield { position: relative; display: grid; place-items: center; width: 41px; height: 47px; color: var(--silver-bright); filter: drop-shadow(0 0 7px rgba(217, 189, 128, 0.16)); }
-.metallic-logo__shield svg { position: absolute; width: 43px; height: 49px; color: var(--brass-bright); stroke-width: 1.1; }
-.metallic-logo__shield::after { content: ""; position: absolute; width: 60%; height: 2px; top: 13px; background: linear-gradient(90deg, transparent, white, transparent); transform: rotate(-36deg); opacity: 0.85; }
-.metallic-logo__shield span { position: relative; z-index: 1; font: 400 1.32rem/1 var(--display); letter-spacing: -0.05em; }
-.metallic-logo__type { display: grid; gap: 1px; line-height: 1; }
-.metallic-logo__type strong { color: var(--silver-bright); font: 400 1.35rem/1 var(--display); letter-spacing: 0.035em; }
-.metallic-logo__type span { color: var(--silver); font: 700 0.52rem/1 var(--mono); letter-spacing: 0.12em; }
-.metallic-logo--compact .metallic-logo__shield { width: 32px; height: 37px; }
-.metallic-logo--compact .metallic-logo__shield svg { width: 34px; height: 39px; }
-.metallic-logo--compact .metallic-logo__type strong { font-size: 1.05rem; }
+.metallic-logo,
+.brand-logo { display: inline-flex; align-items: center; gap: 11px; transform-style: preserve-3d; transition: transform 220ms ease; }
+.brand-logo:hover { transform: perspective(450px) rotateX(3deg) rotateY(-6deg); }
+.brand-logo__img { display: block; object-fit: contain; filter: drop-shadow(0 0 7px rgba(217, 189, 128, 0.22)); }
+.brand-logo__type { display: grid; gap: 1px; line-height: 1; }
+.brand-logo__type strong { color: var(--silver-bright); font: 400 1.35rem/1 var(--display); letter-spacing: 0.035em; }
+.brand-logo__type span { color: var(--silver); font: 700 0.52rem/1 var(--mono); letter-spacing: 0.12em; }
+.brand-logo--compact .brand-logo__type strong { font-size: 1.05rem; }
 .desktop-nav { display: flex; align-items: center; gap: 2px; }
 .desktop-nav a { display: inline-flex; align-items: center; gap: 7px; padding: 10px 11px; color: var(--silver); font-size: 0.78rem; transition: background 150ms ease, color 150ms ease; }
 .desktop-nav a:hover { color: var(--silver-bright); background: rgba(196, 199, 204, 0.08); }
@@ -287,9 +283,7 @@ h3 { font: 400 1.55rem/1 var(--display); letter-spacing: -0.025em; text-transfor
   .section { padding: 72px 0; }
   h1 { font-size: clamp(3rem, 16.5vw, 5rem); }
   .site-header__inner { min-height: 69px; }
-  .metallic-logo__shield { width: 34px; height: 40px; }
-  .metallic-logo__shield svg { width: 36px; height: 42px; }
-  .metallic-logo__type strong { font-size: 1.1rem; }
+  .brand-logo__type strong { font-size: 1.1rem; }
   .hero { min-height: 695px; }
   .hero__content { padding-top: 81px; }
   .hero__insignia { top: 190px; right: -32px; width: 210px; }

@@ -6,7 +6,7 @@ export const site = {
   motto: "Honor · Duty · Integrity",
   description:
     "Cổng thông tin và bộ luật roleplay chính thức của Six City Police Department.",
-  sourceUrl: "https://sites.google.com/view/upd-jetray/l-s-p-d",
+  sourceUrl: "https://docs.google.com/document/d/1m177swU1bpb5DH-IOQvIOsa-wrkD2-xdAgOICjTRTis/edit",
 };
 
 export const navigation: NavigationItem[] = [

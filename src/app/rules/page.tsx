@@ -25,7 +25,7 @@ export default function RulesPage() {
         {rules.map(([title, text], index) => <article key={title}><span>0{index + 1}</span><h2>{title}</h2><p>{text}</p></article>)}
       </div></section>
       <section className="section section--featured"><div className="shell rule-callout"><ShieldCheck size={26} aria-hidden="true" /><div><p className="eyebrow">Nguồn chuẩn</p><h2>Quy định luôn đi cùng bối cảnh.</h2><p>Đối chiếu luật phương tiện, truy đuổi, giao tranh hoặc phó bản đúng với tình huống đang diễn ra.</p></div><Button href="/laws">Tra cứu bộ luật <BookMarked size={18} aria-hidden="true" /></Button></div></section>
-      <section className="section"><div className="shell pending-note"><CircleAlert size={20} aria-hidden="true" /><p>Một số chi tiết có thể cần quản trị SCPD xác nhận. Những nội dung này luôn có nhãn “Cần rà soát” trên trang luật.</p><Link href="/laws/bat-coc-con-tin">Xem ví dụ <ArrowRight size={15} aria-hidden="true" /></Link></div></section>
+      <section className="section"><div className="shell pending-note"><CircleAlert size={20} aria-hidden="true" /><p>Một số chi tiết có thể cần quản trị SCPD xác nhận. Những nội dung này luôn có nhãn “Cần rà soát” trên trang luật.</p><Link href="/laws/roleplay-cong-dan">Xem ví dụ <ArrowRight size={15} aria-hidden="true" /></Link></div></section>
     </>
   );
 }

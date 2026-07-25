@@ -1,19 +1,23 @@
-import { Shield } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-type MetallicLogoProps = {
+type BrandLogoProps = {
   compact?: boolean;
   className?: string;
 };
 
-export function MetallicLogo({ compact = false, className }: MetallicLogoProps) {
+export function MetallicLogo({ compact = false, className }: BrandLogoProps) {
   return (
-    <div className={cn("metallic-logo", compact && "metallic-logo--compact", className)} aria-label="Six City Police Department">
-      <div className="metallic-logo__shield" aria-hidden="true">
-        <Shield strokeWidth={1.25} />
-        <span>S</span>
-      </div>
-      <div className="metallic-logo__type">
+    <div className={cn("brand-logo", compact && "brand-logo--compact", className)} aria-label="Six City Police Department">
+      <Image
+        src="/logo_SIX_city.webp"
+        alt="SIX CITY POLICE DEPARTMENT"
+        width={compact ? 38 : 48}
+        height={compact ? 44 : 56}
+        className="brand-logo__img"
+        priority
+      />
+      <div className="brand-logo__type">
         <strong>SIX CITY</strong>
         <span>POLICE DEPARTMENT</span>
       </div>

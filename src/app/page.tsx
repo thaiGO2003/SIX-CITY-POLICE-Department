@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const featuredLaws = ["quyen-va-nghia-vu-canh-sat", "luat-phuong-tien", "pit-va-truy-duoi", "bat-coc-con-tin"]
+  const featuredLaws = ["quyen-va-nghia-vu-canh-sat", "luat-phuong-tien", "pit-va-truy-duoi", "luat-hinh-su"]
     .map((slug) => laws.find((law) => law.slug === slug))
     .filter((law): law is (typeof laws)[number] => Boolean(law));
 
