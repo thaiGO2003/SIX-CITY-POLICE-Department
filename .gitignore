@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+
+# Next.js build output
+/.next/
+/out/
+
+# TypeScript build metadata
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment files
+.env*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage and local tooling
+/coverage/
+.vercel/
+/browser-check.mjs
+/homepage-desktop.png
+/laws-mobile.png
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
